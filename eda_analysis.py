@@ -53,11 +53,11 @@ def load_and_profile(filepath):
         x = df['commute_minutes'].median()
         f.write(f'Median For commute_minute:\n{x}\n\n')
         f.write("=============\n\n")
-        f.write(f'BEFORE commute_minutes:\n{df['commute_minutes'][0:9]}\n\n')
+        f.write(f"BEFORE commute_minutes:\n{df['commute_minutes'][0:9]}\n\n")
         f.write("=============\n\n")
         df["commute_minutes"] = df['commute_minutes'].fillna(x)
         f.write("=============\n\n")
-        f.write(f'AFTER commute_minutes:\n{df['commute_minutes'][0:9]}\n\n')
+        f.write(f"AFTER commute_minutes:\n{df['commute_minutes'][0:9]}\n\n")
         f.write(f'Missing Count:\n{df.isnull().sum()}\n\n')
 
         
