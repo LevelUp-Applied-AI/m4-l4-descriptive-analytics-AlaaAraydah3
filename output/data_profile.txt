@@ -1,0 +1,103 @@
+Shape:
+(2000, 10)
+=============
+data types: 
+student_id                str
+department                str
+semester                  str
+course_load             int64
+study_hours_weekly    float64
+gpa                   float64
+attendance_pct        float64
+has_internship            str
+commute_minutes       float64
+scholarship               str
+dtype: object
+=============
+Missing Count:
+student_id              0
+department              0
+semester                0
+course_load             0
+study_hours_weekly      0
+gpa                     0
+attendance_pct          0
+has_internship          0
+commute_minutes       181
+scholarship           389
+dtype: int64
+=============
+Missing Percent:
+student_id             0.00
+department             0.00
+semester               0.00
+course_load            0.00
+study_hours_weekly     0.00
+gpa                    0.00
+attendance_pct         0.00
+has_internship         0.00
+commute_minutes        9.05
+scholarship           19.45
+dtype: float64
+=============
+
+=== Handling Decisions ===
+
+Median For commute_minute:
+25.0
+
+=============
+
+BEFORE commute_minutes:
+0    24.0
+1    34.0
+2    32.0
+3    49.0
+4    27.0
+5    18.0
+6     NaN
+7    12.0
+8    17.0
+Name: commute_minutes, dtype: float64
+
+=============
+
+=============
+
+AFTER commute_minutes:
+0    24.0
+1    34.0
+2    32.0
+3    49.0
+4    27.0
+5    18.0
+6    25.0
+7    12.0
+8    17.0
+Name: commute_minutes, dtype: float64
+
+Missing Count:
+student_id              0
+department              0
+semester                0
+course_load             0
+study_hours_weekly      0
+gpa                     0
+attendance_pct          0
+has_internship          0
+commute_minutes         0
+scholarship           389
+dtype: int64
+
+AFTER Drop scholarship NaN:
+student_id            0
+department            0
+semester              0
+course_load           0
+study_hours_weekly    0
+gpa                   0
+attendance_pct        0
+has_internship        0
+commute_minutes       0
+scholarship           0
+dtype: int64
